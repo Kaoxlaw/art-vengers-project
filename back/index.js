@@ -30,7 +30,7 @@ app.post('/create-account', function(req, res){
 
   if (body.email && body.password) {
     _db = _client.db('artvengers');
-    _collection = _db.collection('articles');
+    _collection = _db.collection('users');
     _collection.find({}).toArray(function (err, docs){
       if (err) console.log('erreur: ', err);
         else {
@@ -62,6 +62,15 @@ app.post('/create-account', function(req, res){
 }
 });
 
-app.listen(3000, function(){
-  console.log('Let\'s go baby !');
+MongoClient.connect(url, function (err, client) {
+  if (err) console.log('Error', err);
+  else {
+    console.log("Connected successfully to server");
+
+    app.listen(3000, function () {
+      console.log('Let\'s Go BaBY!!!');
+    });
+  }
+  _client = client;
+  // client.close();
 });
