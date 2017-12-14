@@ -1,1 +1,1 @@
-angular.module('art_vengers', []);
+angular.module('artVengers', ['ui.router']);
