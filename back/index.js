@@ -1,3 +1,4 @@
+var fs = require('fs');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -18,14 +19,14 @@ app.use(function (req, res, next){
   next();
 });
 
-function _findUser(username, docs){
-  var user = docs.find(function (elment) {
+function _findUser(email, docs){
+  var email = docs.find(function (element) {
     return element.email == email;
   });
   return email;
 }
 
-app.post('/create-account', function(req, res){
+app.post('/creer-un-compte', function(req, res){
   var body = req.body;
 
   if (body.email && body.password) {
@@ -34,7 +35,7 @@ app.post('/create-account', function(req, res){
     _collection.find({}).toArray(function (err, docs){
       if (err) console.log('erreur: ', err);
         else {
-         if (_findUser(body.email)) {
+         if (_findUser(body.email, docs)) {
           res.status(409).send('Cet email est deja utilisé: ' + body.email);
         } else {
       var newProfile = {
@@ -50,7 +51,7 @@ app.post('/create-account', function(req, res){
         cellPhone: body.cellPhone,
         };
         _collection.insert(newProfile);
-        rest.status(200).send({
+        res.status(200).send({
         message: 'Profile créer',
         data: newProfile
       });
