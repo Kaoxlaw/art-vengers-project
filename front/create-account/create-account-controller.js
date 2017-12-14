@@ -1,3 +1,3 @@
-angular.module('artVengers'.controller('createAccountController', function ($scope) {
+angular.module('artVengers').controller('createAccountController', function ($scope) {
   
 });

@@ -1,4 +1,4 @@
-angular.module('artVengers').controller('homeController', function($state) {
+angular.module('artVengers').controller('homeController', function($scope, $state, $http) {
 
 
 });

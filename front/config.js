@@ -1,14 +1,16 @@
-angular.module('artVengers').config(function($stateProvider, $urlRouteProvider) {
+angular.module('artVengers').config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouteProvider.otherwise('/home');
 
   $stateProvider
 
   .state('home', {
     url:'/home',
-    templateUrl: 'home-view.html',
-    // controller: 'homeController'
-  })
+    templateUrl: 'home/home-view.html',
+    controller: 'homeController'
+  }),
+
+  $urlRouterProvider.otherwise('/home');
+  
   //
   // .state('create-account', {
   //   url:'/create-account',
