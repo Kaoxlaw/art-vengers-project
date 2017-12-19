@@ -2,6 +2,7 @@ angular.module('artVengers').controller('homeController', function($scope, $stat
 
     $scope.accountPage = _accountPage;
     $scope.login = _login;
+    $scope;cart = _cart;
 
     function _accountPage() {
       $state.go('create-account');
@@ -9,5 +10,9 @@ angular.module('artVengers').controller('homeController', function($scope, $stat
 
     function _login() {
       $state.go('login');
+    }
+
+    function _cart() {
+      $state.go('cart');
     }
 });

@@ -21,9 +21,9 @@ angular.module('artVengers').config(function($stateProvider, $urlRouterProvider)
     controller: 'loginController'
   })
 
-  // .state('cart', {
-  //   url: '/cart',
-  //   templateUrl: 'cart-view.html',
-  //   controller: 'cartController'
-  // })
+  $stateProvider.state('cart', {
+    url: '/cart',
+    templateUrl: 'cart-view.html',
+    controller: 'cartController'
+  })
 });
