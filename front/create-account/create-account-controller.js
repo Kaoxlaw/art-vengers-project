@@ -1,22 +1,26 @@
-angular.module('artVengers').controller('createAccountController', function ($scope, $http) {
+angular.module('artVengers').controller('createAccountController', function($scope, $state, $http) {
 
   $scope.signUp = _signUp;
-  $scope.return = _return;
 
-  function signUp() {
-    if ($scope.username && $scope.email && $scope.password) {
+  function _signUp() {
+    if ($scope.email && $scope.password) {
       var newUser = {
-        username: $scope.username,
+        firstName: $scope.firstName,
+        lastName: $scope.lastName,
+        dateOfBirth: $scope.dateOfBirth,
+        adress: $scope.adress,
+        postCode: $scope.postCode,
+        city: $scope.city,
+        country: $scope.country,
+        cellphone: $scope.cellphone,
         email: $scope.email,
         password: $scope.password,
-        nom: $scope.nom,
-        prenom: $scope.prenom,
-        age: $scope.age
       };
 
-      $http.post('http://localhost:3000/create-account').then(
+      $http.post('http://localhost:3000/signup', newUser).then(
         function(response) {
-          alert('Ton compte a bien été créé ! bienvenue tête de naze !');
+          alert('Votre compte a bien été créer ! bienvenue tête de naze !');
+          $state.go('signin');
         },
         function(response) {
           alert(response.data);
@@ -24,11 +28,7 @@ angular.module('artVengers').controller('createAccountController', function ($sc
       );
     }
     else {
-      alert('Vous devez au moins fournir un identifiant et un mot de passe');
+      alert('Vous devez au moins fournir un email et un mot de passe');
     }
-  }
-
-  function _return() {
-    $state.go('home');
-  }
+  };
 });

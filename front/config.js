@@ -4,26 +4,25 @@ angular.module('artVengers').config(function($stateProvider, $urlRouterProvider)
     url:'/home',
     templateUrl: 'home/home-view.html',
     controller: 'homeController'
-  }),
+  });
 
-  $urlRouterProvider.otherwise('/home');
-
-
-  $stateProvider.state('create-account', {
-    url:'/create-account',
+  $stateProvider.state('signup', {
+    url:'/signup',
     templateUrl: 'create-account/create-account-view.html',
     controller: 'createAccountController'
-  })
+  });
 
-  $stateProvider.state('login', {
-    url: '/login',
+  $stateProvider.state('signin', {
+    url: '/signin',
     templateUrl: 'login/login-view.html',
     controller: 'loginController'
-  })
+  });
 
   $stateProvider.state('cart', {
     url: '/cart',
-    templateUrl: 'cart-view.html',
+    templateUrl: 'cart/cart-view.html',
     controller: 'cartController'
-  })
+  });
+
+  $urlRouterProvider.otherwise('/home');
 });

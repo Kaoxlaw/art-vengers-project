@@ -1,23 +1,22 @@
-angular.module('artVengers').controller('loginController', function($state, $http, $scope) {
+angular.module('artVengers').controller('loginController', function($scope, $state, $http) {
+ 
+ $scope.signIn = _signIn;
 
-  $scope.login = _login;
-  $scope.return = _return;
+function _signIn() {
+    var data = {
+      email: $scope.email,
+      password: $scope.password
+    };
 
-  function _login() {
-    if($scope.username && $scope.password) {
-      var user = {
-        username = $scope.username,
-        password = $scope.password
-      };
-      //voir pour le USER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      $http.post('http://localhost:3000/login', user).then(
-        function(response) {
-        alert('Bienvenue à la maison mon pote !')
-      });
-    }
+    $http.post('http://localhost:3000/signin', data).then(
+      function(res) {
+        localStorage.setItem('accesstoken', res.data.token);
+        alert(res.data.message);
+        $state.go('home');
+      }, function(res) {
+        console.log(res.data);
+      }
+    );
   }
 
-  function _return() {
-    $state.go('home');
-  }
 });

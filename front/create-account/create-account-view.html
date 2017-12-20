@@ -4,20 +4,54 @@
             <p class="h5 text-center mb-4">Sign up</p>
             <div class="md-form">
                 <i class="fa fa-user prefix grey-text"></i>
-                <input type="text" id="orangeForm-name" class="form-control">
-                <label for="orangeForm-name">Your name</label>
+                <input ng-model="firstName" type="text" id="orangeForm-firstName" class="form-control" placeholder="Prénom">
+                <label for="orangeForm-firstName" ></label>
             </div>
             <div class="md-form">
                 <i class="fa fa-envelope prefix grey-text"></i>
-                <input type="text" id="orangeForm-email" class="form-control">
-                <label for="orangeForm-email">Your email</label>
+                <input ng-model="lastName" type="text" id="orangeForm-lastName" class="form-control" placeholder="Nom">
+                <label for="orangeForm-lastName"></label>
             </div>
             <div class="md-form">
                 <i class="fa fa-lock prefix grey-text"></i>
-                <input type="password" id="orangeForm-pass" class="form-control">
-                <label for="orangeForm-pass">Your password</label>
+            <input ng-model="dateOfBirth" type="text" id="orangeForm-dateOfBirth" class="form-control" placeholder="Date de naissance">
+                <label for="orangeForm-dateOfBirth"></label>
             </div>
-
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input ng-model="adress" type="text" id="orangeForm-adress" class="form-control" placeholder="Adresse">
+                <label for="orangeForm-adress"></label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input ng-model="postCode" type="text" id="orangeForm-postCode" class="form-control" placeholder="Code Postal">
+                <label for="orangeForm-postCode"></label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input ng-model="city" type="text" id="orangeForm-city" class="form-control" placeholder="Ville">
+                <label for="orangeForm-city"></label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input ng-model="country" type="text" id="orangeForm-country" class="form-control" placeholder="Pays">
+                <label for="orangeForm-country"></label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input ng-model="cellphone" type="text" id="orangeForm-cellphone" class="form-control" placeholder="telephone Portable">
+                <label for="orangeForm-cellphone"></label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input ng-model="email" type="text" id="orangeForm-email" class="form-control" placeholder="Email">
+                <label for="orangeForm-email"></label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input ng-model="password" type="text" id="orangeForm-password" class="form-control" placeholder="Password">
+                <label for="orangeForm-password"></label>
+            </div>
             <div class="text-center">
                 <button class="btn btn-deep-orange" ng-click="signUp()">Sign up</button>
             </div>

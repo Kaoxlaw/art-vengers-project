@@ -1,9 +1,11 @@
-angular.module('artVengers').controller('cartController', function($state, $http, $scope) {
+angular.module('artVengers').controller('cartController', function($scope, $state, $http) {
 
-  $scope.return = _return;
+    $scope.home = _home;
+    
 
-  function _return() {
-    $state.go('home');
-  }
+    function _home() {
+      $state.go('home');
+    };
 
+    
 });

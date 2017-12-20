@@ -4,16 +4,16 @@
         <p class="h5 text-center mb-4">Sign in</p>
         <div class="md-form">
             <i class="fa fa-envelope prefix grey-text"></i>
-            <input ng-model="email" type="text" id="defaultForm-email" class="form-control">
-            <label for="defaultForm-email">Your email</label>
+            <input ng-model="email" type="text" id="defaultForm-email" class="form-control" placeholder="Adresse E-mail">
+            <label for="defaultForm-email"></label>
         </div>
         <div class="md-form">
             <i class="fa fa-lock prefix grey-text"></i>
-            <input ng-model="password" type="password" id="defaultForm-pass" class="form-control">
-            <label for="defaultForm-pass">Your password</label>
+            <input ng-model="password" type="password" id="defaultForm-pass" class="form-control" placeholder="Mot de passe">
+            <label for="defaultForm-pass"></label>
         </div>
         <div class="text-center">
-            <button class="btn btn-default" ng-click="login()">Login</button>
+            <button class="btn btn-default" ng-click="signIn()">Sign In</button>
         </div>
     </form>
   </div>

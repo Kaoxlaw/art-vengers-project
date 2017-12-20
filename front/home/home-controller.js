@@ -1,16 +1,16 @@
 angular.module('artVengers').controller('homeController', function($scope, $state, $http) {
 
-    $scope.accountPage = _accountPage;
-    $scope.login = _login;
-    $scope;cart = _cart;
+    $scope.signup = _signup;
+    $scope.signin = _signin;
+    $scope.cart = _cart;
 
-    function _accountPage() {
-      $state.go('create-account');
-    }
+    function _signup() {
+      $state.go('signup');
+    };
 
-    function _login() {
-      $state.go('login');
-    }
+    function _signin() {
+      $state.go('signin');
+    };
 
     function _cart() {
       $state.go('cart');
