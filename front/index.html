@@ -6,19 +6,47 @@
 
     <title>Art-vengers</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Syncopate" rel="stylesheet">
   </head>
 
   <body ng-app="artVengers">
 
+
+<!-- NAVBAR -->
+
+        <div ng-controller='indexController'>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand">Art'vengers</a>    
+                    </div>
+                        <ul class="nav navbar-nav">
+                          <li role="presentation" class="active"><a href="#">Home <span class="glyphicon glyphicon-home"></span></a></li>
+                          <li role="presentation" ng-click="signin()"><a>signin<span class='glyphicon glyphicon-user'></span></a></li>
+                          <li role="presentation" ng-click="signup()"><a>sign up <span class='glyphicon glyphicon-plus'></span></a></li>
+                          <li role="presentation" ng-click="cart()"><a>cart <span class='glyphicon glyphicon-shopping-cart'></span></a></li>
+<!--                           <div ng-controller="cartController">
+                            <div class="row">
+                                <div class="col-xs-offset-8 col-xs-4">
+                                    <h3>Summary </h3>
+                                    <ngcart-summary></ngcart-summary>
+                                </div>
+                            </div> -->
+                        </ul>
+                </div>
+            </nav>
+        </div>
+
     <ui-view></ui-view>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -28,6 +56,12 @@
     <script src="home/home-controller.js"></script>
     <script src="login/login-controller.js"></script>
     <script src="cart/cart-controller.js"></script>
+    <script src="matthieu/matthieu-controller.js"></script>
+    <script src="jeremy/jeremy-controller.js"></script>
+    <script src="kao/kao-controller.js"></script>
+    <script src="karim/karim-controller.js"></script>
+    <script src="index-controller.js"></script>
+    <script src="bower_components/ngCart/dist/ngCart.min.js"></script>
 
 
 

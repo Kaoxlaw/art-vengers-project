@@ -1,11 +1,10 @@
-angular.module('artVengers').controller('cartController', function($scope, $state, $http) {
+angular.module('artVengers').controller('cartController', ['$scope', '$http', 'ngCart', function($scope, $http, ngCart) {
+    ngCart.setTaxRate(20);
+    ngCart.setShipping(0);  
 
-    $scope.home = _home;
-    
+    $scope.check = _check;
 
-    function _home() {
-      $state.go('home');
+    function _check(){
+    	$state.go('check');
     };
-
-    
-});
+}]);

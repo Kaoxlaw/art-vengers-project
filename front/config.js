@@ -24,5 +24,35 @@ angular.module('artVengers').config(function($stateProvider, $urlRouterProvider)
     controller: 'cartController'
   });
 
+  $stateProvider.state('matthieu',{
+    url: '/matthieu',
+    templateUrl: 'matthieu/matthieu-view.html',
+    controller: 'matthieuController'
+  });
+
+    $stateProvider.state('karim',{
+    url: '/karim',
+    templateUrl: 'karim/karim-view.html',
+    controller: 'karimController'
+  });
+
+      $stateProvider.state('kao',{
+    url: '/kao',
+    templateUrl: 'kao/kao-view.html',
+    controller: 'kaoController'
+  });
+
+        $stateProvider.state('jeremy',{
+    url: '/jeremy',
+    templateUrl: 'jeremy/jeremy-view.html',
+    controller: 'jeremyController'
+  });
+
+        $stateProvider.state('checkout',{
+    url: '/checkout',
+    templateUrl: 'checkout/checkout-view.html',
+    controller: 'checkoutController'
+  });
+
   $urlRouterProvider.otherwise('/home');
 });

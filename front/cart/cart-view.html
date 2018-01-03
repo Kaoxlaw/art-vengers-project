@@ -1,17 +1,253 @@
-<div class="container">
-  <div class="row">
-    <div class="card">
-    <!--Card image-->
-      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" alt="Card image cap">
-    <!--Card content-->
-      <div class="card-body">
-        <!--Title-->
-        <h4 class="card-title">Card title</h4>
-        <!--Text-->
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Button</a>
-      </div>
+<section class="cart">
+
+<br>
+<br>
+<br>
+<br>
+<div ng-controller="cartController">
+
+<!-- ADD TO CART $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$- -->
+    <hr class="titi">
+         <center><h3 class='mat'>Matthieu</h3></center>
+<div class="row item">
+    <div class="col-xs-6 col-sm-3">
+        <h4>Cuisine</h4>
+        <p> $8000</p>
+        <ngcart-addtocart id="item1" name="Pose de cuisine" price="8000" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
     </div>
-<!--/.Card-->
-  </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Terrasse</h4>
+        <p> $7000</p>
+        <ngcart-addtocart id="item2" name="Pose de terrasse" price="7000" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Salle de bain</h4>
+        <p> $6000</p>
+        <ngcart-addtocart id="item3" name="Pose de salle de bain" price="6000" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
 </div>
+
+<hr class="titi">
+         <center><h3 class="karoum">Karim</h3></center>
+<div class="row item">
+    <div class="col-xs-6 col-sm-3">
+        <h4>Stage gardien</h4>
+        <p> $30/heure</p>
+        <ngcart-addtocart id="item4" name="stage gardien" price="30" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Stage attaquant</h4>
+        <p> $50/heure</p>
+        <ngcart-addtocart id="item5" name="stage attaquant" price="50" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Stage défenseur</h4>
+        <p> $50/heure</p>
+        <ngcart-addtocart id="item6" name="stage défenseur" price="50" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+</div>
+
+
+<hr class="titi">
+         <center><h3 class="mike">Kao</h3></center>
+<div class="row item">
+    <div class="col-xs-6 col-sm-3">
+        <h4>Photo identité</h4>
+        <p> $30/heure</p>
+        <ngcart-addtocart id="item7" name="photo d'identité" price="30" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Photo de mariage</h4>
+        <p> $50/heure</p>
+        <ngcart-addtocart id="item8" name="photo de mariage" price="50" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Book</h4>
+        <p> $100/heure</p>
+        <ngcart-addtocart id="item9" name="réalisation de book" price="100" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+</div>
+
+
+<hr class="titi">
+         <center><h3 class="jeje">Jérémy</h3></center>
+<div class="row item">
+    <div class="col-xs-6 col-sm-3">
+        <h4>Arabe débutant</h4>
+        <p> $30/heure</p>
+        <ngcart-addtocart id="item10" name="cours arabe débutant" price="30" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Arabe confirmé</h4>
+        <p> $70/heure</p>
+        <ngcart-addtocart id="item11" name="cours arabe confirmé" price="70" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <h4>Arabe de la street</h4>
+        <p> $100/heure</p>
+        <ngcart-addtocart id="item12" name="cours arabe de la street" price="100" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div>
+    <!-- <div class="col-xs-6 col-sm-3">
+        <h4>Logobi GT</h4>
+        <p> $300/heure</p>
+        <ngcart-addtocart id="item13" name="cours de logobi GT" price="300" quantity="1" quantity-max="10">Ajouter au panier</ngcart-addtocart>
+    </div> -->
+
+</div>
+
+<!-- PANIER $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$- -->
+
+
+    <hr class="titi">
+    <h3>Panier</h3>
+
+    <ngcart-cart></ngcart-cart>
+   
+    <hr/>
+
+<div class="row item">
+    <div class="col-md-12">
+        
+    <h3>Finaliser la Vente</h3>
+        
+
+
+
+    <!-- <div class="row">
+    <div class="col-xs-4">
+        <h4>service 'log'</h4>
+        <ngcart-checkout service="log">Checkout</ngcart-checkout>
+    </div>
+    <div class="col-xs-4">
+        <h4>service 'http'</h4>
+        <ngcart-checkout service="http" settings="httpSettings">Checkout </ngcart-checkout>
+    </div>
+    <div class="col-xs-4">
+        <h4>service 'paypal'</h4>
+        <ngcart-checkout service="paypal" settings="payPalSettings"></ngcart-checkout>
+    </div>
+</div> -->
+        
+<script type="text/ng-template" id="template/ngCart/summary.html"><div class="row">
+ 
+    <div class="col-md-6">{{ ngCart.getTotalItems() }}
+        <ng-pluralize count="ngCart.getTotalItems()" when="{1: 'item', 'other':'items'}"></ng-pluralize>
+        <br />{{ ngCart.totalCost() | currency }}
+    </div>
+</div>
+</script>
+
+
+<script type="text/ng-template" id="template/ngCart/cart.html">
+<div class="alert alert-warning" role="alert" ng-show="ngCart.getTotalItems() === 0">
+    Votre Panier est vide
+</div>
+
+<div class="table-responsive col-lg-12" ng-show="ngCart.getTotalItems() > 0">
+
+    <table class="table table-striped ngCart cart">
+
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Quantité</th>
+            <th>Amount</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr ng-show="ngCart.getTax()">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>TVA ({{ ngCart.getTaxRate() }}%):</td>
+            <td>{{ ngCart.getTax() | currency }}</td>
+        </tr>
+        <tr ng-show="ngCart.getShipping()">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Frais de Port:</td>
+            <td>{{ ngCart.getShipping() | currency }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Total:</td>
+            <td>{{ ngCart.totalCost() | currency }}</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr ng-repeat="item in ngCart.getCart().items track by $index">
+            <td><span ng-click="ngCart.removeItemById(item.getId())" class="glyphicon glyphicon-remove"></span></td>
+
+            <td>{{ item.getName() }}</td>
+            <td><span class="glyphicon glyphicon-minus" ng-class="{'disabled':item.getQuantity()==1}"
+                      ng-click="item.setQuantity(-1, true)"></span>&nbsp;&nbsp;
+                {{ item.getQuantity() | number }}&nbsp;&nbsp;
+                <span class="glyphicon glyphicon-plus" ng-click="item.setQuantity(1, true)"></span></td>
+            <td>{{ item.getPrice() | currency}}</td>
+            <td>{{ item.getTotal() | currency }}</td>
+        </tr>
+        </tbody>
+    </table>
+            
+            <a ui-sref="checkout" ui-sref-active='active'><button type="submit" class="btn btn-success">Procéder au paiement</button></a>
+</div>
+
+</script>
+
+<script type="text/ng-template" id="template/ngCart/addtocart.html"><div ng-hide="attrs.id">
+    <a class="btn btn-lg btn-primary" ng-disabled="true" ng-transclude></a>
+
+</div>
+<div ng-show="attrs.id">
+    <div>
+        <span ng-show="quantityMax">
+            <select name="quantity" id="quantity" ng-model="q"
+                    ng-options=" v for v in qtyOpt"></select>
+        </span>
+        <a class="btn btn-sm btn-primary"
+           ng-click="ngCart.addItem(id, name, price, q, data)"
+           ng-transclude></a>
+    </div>
+    <mark  ng-show="inCart()">
+        Cet article est dans votre panier. <br/><a ng-click="ngCart.removeItemById(id)" style="cursor: pointer;">Effacer</a>
+    </mark>
+</div>
+</script>
+
+<script type="text/ng-template" id="template/ngCart/checkout.html">
+    
+<!-- <div ng-if="service=='http' || service == 'log'">
+    <button class="btn btn-primary" ng-click="checkout()" ng-disabled="!ngCart.getTotalItems()" ng-transclude>Checkout</button>
+</div>
+
+
+<div ng-if="service=='paypal'">
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-show="ngCart.getTotalItems()">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="{{ settings.paypal.business }}">
+        <input type="hidden" name="lc" value="CA">
+        <input type="hidden" name="item_name" value="{{ settings.paypal.item_name }}">
+        <input type="hidden" name="item_number" value="{{ settings.paypal.item_number }}">
+        <input type="hidden" name="amount" value="{{ ngCart.getSubTotal()}}">
+        <input type="hidden" name="currency_code" value="{{ settings.paypal.currency_code }}">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="{{ ngCart.getTaxRate()}}">
+        <input type="hidden" name="shipping" value="{{ ngCart.getShipping()}}">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+</div> -->
+    
+</script>    
+</section>
+
+    

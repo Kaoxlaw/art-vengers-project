@@ -1,0 +1,214 @@
+/*NAVBAR----------------------------------------*/
+nav.navbar{
+	margin-bottom: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	font-family: 'Raleway', sans-serif;
+}
+
+.active:hover{
+	color: red;
+}
+
+/*HEADER----------------------------------------*/
+
+section.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url('dollar.jpg');
+	/*background-image: url('avenger.jpg');*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div h1{
+	font-family: "Orbitron", sans-serif;
+	color: white;
+	font-size: 100px;
+	margin: auto;
+}
+
+div hr{
+	background-color: white;
+	height: 10px;
+	margin: 10px;
+	width: 25%;
+}
+
+img{
+	width: 5%;
+	padding-bottom: 10px;
+}
+.chevron{
+	position: absolute;
+	bottom: 10px;
+}
+
+.bla{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+/*PRESENTATION-----------------------------------*/
+
+section.presentation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	margin-bottom: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+hr.hrh2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #117864;
+	width:25%;
+	height: 10px;
+}
+
+/*SERVICES---------------------------------------*/
+
+section.services{
+	height: 100vh;
+
+}
+
+.matthieu, .karim, .kao, .jeremy{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Raleway", sans-serif;
+	color:white;
+}
+
+.matthieu{
+	background-image: url('matthieu.jpg');
+}
+
+.karim{
+	background-image: url('karim.jpg');
+}
+
+.kao{
+	background-image: url('kao.jpg');
+}
+
+.jeremy{
+	background-image: url('jeremy.jpg');
+}
+
+p.text{
+	position: absolute;
+	bottom: 2px;
+}
+
+button.showservice{
+	position: absolute;
+	top: 2px;
+	right: 5px;
+}
+
+/*hover*/
+
+.matthieu:hover{
+	border: 10px solid white;
+}
+
+.karim:hover{
+	border: 10px solid white;
+}
+
+.kao:hover{
+	border: 10px solid white;
+}
+
+.jeremy:hover{
+	border: 10px solid white;
+}
+
+/*SEVICE VIEW-------------*/
+
+hr.Hr{
+	height: 5px;
+	background-color: white;
+	margin-bottom: 50px;
+}
+.serviceName{
+	color: white;
+	margin-bottom: 10px;
+}
+
+.Service{
+	color: white;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image:url('dollar.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*LOGIN VIEW*/
+
+.login{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+hr.toto{
+	height: 1px;
+	background-color: white;
+	width: 500px
+}
+
+/*CART VIEW*/
+.cart{
+
+}
+
+
+.mat, .karoum, .mike, .jeje{
+	margin-bottom: 30px;
+	font-family: 'Orbitron', sans-serif;
+	color: #117864;
+}
+
+hr.titi{
+	width: 100%;
+}
+
+.item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*CHECKOUT VIEW*/
+
+
+.checkout{
+	height: 100vh;
+	background-image:url('nous.jpg'); 
+	background-size: contain;
+	background-repeat: repeat;
+	display: block;
+	margin: auto;
+}

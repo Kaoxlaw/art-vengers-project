@@ -1,7 +1,79 @@
-<div class="container-fluid">
-  <div class="row">
-    <button ng-click="signin()" type="button" class="btn btn-outline-default waves-effect">Login</button>
-    <button ng-click="signup()" type="button" class="btn btn-outline-warning waves-effect">Créer votre compte</button>
-    <button ng-click="cart()" type="button" class="btn btn-outline-default waves-effect">Votre panier</button>
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Art-Vengers</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="animate.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Syncopate" rel="stylesheet">
+	</head>
+	<body>
+		
+
+		<!-- HEADER -->
+
+		<section class="header">
+			<div class=" bla row">
+				<div class=" title col-md-12">
+					<center><h1>ART'VENGERS</h1></center>
+					<center><hr></center>
+				</div>
+				<div class=" chevron col-md-12">
+					<center><a href="#presentation"><img class='animated infinite fadeInDown'src="chevron.png" alt=""></a></center>
+				</div>
+			</div>
+		</section>
+
+		<!-- PRESENTATION -->
+
+		<section class="presentation" id="presentation">
+			<div>
+				<center><h2>Nous sommes les art'vengers.</h2></center>
+				<center><hr class="hrh2"></center>
+				<center><h3>Nous proposons des services de haute qualité.</h3></center>
+			</div>
+		</section>
+
+		<!-- SERVICES -->
+
+		<section class="services" id="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 matthieu">
+						<h2><strong>MATTHIEU</strong></h2>
+						<p class="text"><strong>Parpaing, mortier et ciment n'ont aucuns secret pour lui, Matthieu est un expert du bâtiment. Récompensé de la trouech' d'or 2017 par le syndicat des Portugais du BTP, il réaliserat vos travaux en un temps record.</strong></p>
+						<button type="submit" class="showservice btn btn-primary" ng-click='matthieu()'>Voir les services</button>
+					</div>
+					<div class="col-md-6 karim">
+						<h2><strong>KARIM</strong></h2>
+						<p class="text"><strong>CR7, Zidane, <span style="text-decoration: line-through;">Ben Arfa</span>. Ils sont tous passés par les mains de cet expert du foot. Karim est notre Gourou du petit pont. Sont programme d'entrainement est reconnu par les plus grand.</strong></p>
+						<button type="submit" class="showservice btn btn-primary" ng-click='karim()'>Voir les services</button>
+					</div>
+					<div class="col-md-6 kao">
+						<h2><strong>KAO</strong></h2>
+						<p class="text"><strong>Vous êtes moche! pas de soucis Kao est la pour vous, à coups de photoshop et de reflexe numérique, à vous le succes sur les résaux.</strong></p>
+						<button type="submit" class="showservice btn btn-primary" ng-click='kao()'>Voir les services</button>
+					</div>
+					<div class="col-md-6 jeremy">
+						<h2><strong>JEREMY</strong></h2>
+						<p class="text"><strong>"Bsartek", "Hamdoullilah, "MashaAllah". Tant d'expressions que vous allez decouvrir avec notre professeur de langue Arabe. Diplômé d'un doctorat "Rebeu option street" chez Simplon.co, Jérémy aussi appelé Malek vous propose les meilleures cours de France.</strong></p>
+						<button type="submit" class="showservice btn btn-primary" ng-click='jeremy()'>Voir les services</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/matthieuG-dev/art-vengers-project/issues"
   },
-  "homepage": "https://github.com/matthieuG-dev/art-vengers-project#readme"
+  "homepage": "https://github.com/matthieuG-dev/art-vengers-project#readme",
+  "dependencies": {
+    "angular": "^1.6.7",
+    "angular-ui-router": "^1.0.3",
+    "bower": "^1.8.2"
+  }
 }

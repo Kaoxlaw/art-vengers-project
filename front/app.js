@@ -1,1 +1,1 @@
-angular.module('artVengers', ['ui.router']);
+angular.module('artVengers', ['ui.router', 'ngCart']);

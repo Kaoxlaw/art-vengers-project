@@ -1,6 +1,7 @@
 angular.module('artVengers').controller('createAccountController', function($scope, $state, $http) {
 
   $scope.signUp = _signUp;
+  $scope.home = _home;
 
   function _signUp() {
     if ($scope.email && $scope.password) {
@@ -31,4 +32,8 @@ angular.module('artVengers').controller('createAccountController', function($sco
       alert('Vous devez au moins fournir un email et un mot de passe');
     }
   };
+
+  function _home(){
+      $state.go('home');
+    };
 });

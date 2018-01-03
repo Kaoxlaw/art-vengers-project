@@ -1,6 +1,8 @@
 angular.module('artVengers').controller('loginController', function($scope, $state, $http) {
  
- $scope.signIn = _signIn;
+  $scope.signIn = _signIn;
+  $scope.home = _home
+
 
 function _signIn() {
     var data = {
@@ -18,5 +20,9 @@ function _signIn() {
       }
     );
   }
+
+function _home(){
+      $state.go('home');
+};
 
 });
